@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>fantastic1</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">   
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php">Fantastic</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart-modal">
+                        Basket <span class="badge badge-light">3</span>
+                    </button>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="wrapper mt-5 product-item mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Гиперион</h1>
+                </div>        
+                <div class="col-sm-4">
+                    <div class="product-item-thumb d-flex justify-content-center">
+                        <img src="img/fant1.jpg" alt="">
+                    </div>                   
+                </div>
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card-price">
+                                <del>70$</del>
+                                 39$    
+                                <span class="item-status">
+                                    <i class="fas fa-check text-success"></i> В наличии
+                                </span>
+                            </div>
+                        </div>                     
+                        <div class="col-md-6">
+                            <form class="form-inline">
+                                <div class="input-group">
+                                    <input type="text" name="qty" value="1" class="form-control">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-primary">Купить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card-desc">
+                        <p>"Гиперион" - первая книга головокружительной тетралогии Дэна Симмонса. Действие книги разворачивается в далеком будущем. Герои романа отправляются в паломничество на планету Гиперион к так называемым Гробницам Времени, чтобы разгадать их тайну и встретиться с древним чудовищем — Шрайком. В дороге паломники решают по очереди рассказать свои истории, во-первых, чтобы скоротать путь и лучше узнать друг друга, а во-вторых — чтобы понять, зачем их отправили на Гиперион и что их там ждёт. Всем, кто любит фантастику советую прочитать.
+                        </p>
+                        </div>               
+                </div>
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </div><!-- /wrapper -->
+    <!-- Modal -->
+    <div class="modal fade cart-modal" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Image</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Qty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="product.html"><img src="assets/images/1.jpg" alt="CORT AD810M Акустическая гитара"></a></td>
+                                <td><a href="product.html">CORT AD810M Акустическая гитара</a></td>
+                                <td>2 799</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><a href="product.html"><img src="assets/images/2.jpg" alt="Crafter D6/N Акустическая гитара"></a></td>
+                                <td><a href="product.html">Crafter D6/N Акустическая гитара</a></td>
+                                <td>12 626</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" align="right">Товаров: 3 <br> Сумма: 28 051 грн.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
